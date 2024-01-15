@@ -17,22 +17,18 @@
 	<properties>
 		<java.version>17</java.version>
 	</properties>
-	<dependencyManagement>
-		   <dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-dependencies</artifactId>
-			<version>3.2.1</version>
-			<type>pom</type>
-			<scope>import</scope>
-		</dependency>
-		   </dependencies>
-
-	</dependencyManagement>
 	<dependencies>
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
+			<groupId>org.yaml</groupId>
+			<artifactId>snakeyaml</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>sample.ProjectD</groupId> <!-- Exclude Project-D
+					from Project-B -->
+					<artifactId>Project-D</artifactId>
+				</exclusion>
+			</exclusions>
+
 		</dependency>
 
 		<dependency>
@@ -41,11 +37,7 @@
 			<scope>test</scope>
 		</dependency>
 
-		<dependency>
-			<groupId>org.yaml</groupId>
-			<artifactId>snakeyaml</artifactId>
-			        <version>1.33</version>
-		</dependency>
+
 
 	</dependencies>
 

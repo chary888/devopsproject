@@ -1,20 +1,20 @@
 package com.devops.kube;
 
-import org.springframework.web.bind.annotation.RestController;
+//import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import org.springframework.web.bind.annotation.GetMapping;
+//import org.springframework.web.bind.annotation.GetMapping;
 
 
 
-@RestController
+//@RestController
 public class TestController 
 {
 
 	
-	@GetMapping("/listGeethanjali2008")
+	//@GetMapping("/listGeethanjali2008")
 	public List<String> getGeethanjaliStudents() {
 		System.out.println("rest service");
 		List<String>  userList =  new ArrayList<>();
